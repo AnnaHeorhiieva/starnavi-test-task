@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -12,46 +13,10 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
-
-// {
-//   "compilerOptions": {
-//     "baseUrl": "src",
-//     "allowJs": true,
-//     "allowUnreachableCode": false,
-//     "allowUnusedLabels": false,
-//     "declaration": true,
-//     "esModuleInterop": true,
-//     "forceConsistentCasingInFileNames": true,
-//     "isolatedModules": false,
-//     "jsx": "react-jsx",
-//     "lib": ["dom", "dom.iterable", "esnext"],
-//     "module": "esnext",
-//     "moduleResolution": "node",
-//     "noEmit": true,
-//     "noFallthroughCasesInSwitch": true,
-//     "noImplicitReturns": true,
-//     "pretty": true,
-//     "resolveJsonModule": true,
-//     "skipLibCheck": true,
-//     "sourceMap": true,
-//     "strict": true,
-//     "target": "es2018",
-//     "types": ["node", "jest", "@testing-library/jest-dom"],
-//     "allowSyntheticDefaultImports": true
-//   },
-//   "include": [
-//     "src",
-//     "global.d.ts",
-//     "**/*.ts",
-//     "**/*.tsx",
-//     "jest.setup.js",
-//     "jest.config.js"
-//   ],
-//   "exclude": ["node_modules"]
-// }
